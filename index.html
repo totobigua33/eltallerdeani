@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cursos online de costura, moldes descargables y tutoriales paso a paso.">
+  <title>Atelier Costura | Cursos online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Inicio">
+      <span class="brand-mark">A</span><span>Atelier Costura</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a href="#cursos">Cursos</a><a href="#como-funciona">Cómo funciona</a><a href="#testimonios">Alumnas</a><a href="#faq">Preguntas</a>
+      <a class="btn btn-small" href="#cursos">Ver cursos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">COSTURA CREATIVA · A TU RITMO</p>
+        <h1>Aprendé a coser piezas que vas a amar y vender</h1>
+        <p class="lead">Tutoriales claros, moldes descargables y acceso online para que avances desde tu casa, sin horarios.</p>
+        <div class="hero-actions"><a class="btn" href="#cursos">Explorar cursos</a><a class="text-link" href="#como-funciona">Ver cómo funciona →</a></div>
+        <div class="trust"><span>✓ Acceso inmediato</span><span>✓ Videos paso a paso</span><span>✓ Soporte personalizado</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Mesa de trabajo de costura">
+        <div class="stitch-card"><span>Nuevo curso</span><strong>Bolso tote forrado</strong><small>Molde + 12 lecciones</small></div>
+      </div>
+    </section>
+
+    <section class="strip"><span>✂ Técnicas profesionales</span><span>▱ Moldes imprimibles</span><span>▶ Acceso desde cualquier dispositivo</span><span>♡ Comunidad creativa</span></section>
+
+    <section class="section" id="cursos">
+      <div class="section-head"><div><p class="eyebrow">ELEGÍ TU PRÓXIMO PROYECTO</p><h2>Cursos destacados</h2></div><p>Comprá una vez y accedé al contenido a tu ritmo.</p></div>
+      <div class="filters" role="group" aria-label="Filtrar cursos">
+        <button class="filter active" data-filter="all" type="button">Todos</button><button class="filter" data-filter="principiante" type="button">Principiante</button><button class="filter" data-filter="intermedio" type="button">Intermedio</button><button class="filter" data-filter="molderia" type="button">Moldería</button>
+      </div>
+      <div class="course-grid" id="courseGrid"></div>
+    </section>
+
+    <section class="feature" id="como-funciona">
+      <div><p class="eyebrow">SIMPLE Y PRÁCTICO</p><h2>De la idea a tu máquina de coser</h2><p>Todo está organizado para que puedas concentrarte en crear.</p></div>
+      <div class="steps"><article><b>01</b><h3>Elegí tu curso</h3><p>Revisá el nivel, contenido y materiales necesarios.</p></article><article><b>02</b><h3>Realizá el pago</h3><p>Confirmá tu compra de forma segura.</p></article><article><b>03</b><h3>Empezá a crear</h3><p>Recibí el acceso a videos y moldes descargables.</p></article></div>
+    </section>
+
+    <section class="section preview">
+      <div class="video-box"><button id="playDemo" type="button" aria-label="Reproducir muestra">▶</button><span>Vista previa del curso</span></div>
+      <div><p class="eyebrow">MIRÁ ANTES DE EMPEZAR</p><h2>Explicaciones cercanas, tomas claras y cada detalle en pantalla</h2><p>Las clases están divididas en lecciones cortas para que puedas pausar, repetir y continuar cuando quieras.</p><ul><li>Preparación de materiales</li><li>Corte y armado paso a paso</li><li>Terminaciones profesionales</li></ul></div>
+    </section>
+
+    <section class="testimonials" id="testimonios"><p class="eyebrow">LO QUE DICEN LAS ALUMNAS</p><h2>Crear también es animarse</h2><div class="quotes"><blockquote>“Las explicaciones son súper claras. Terminé mi primera mochila y quedó hermosa.”<cite>Laura · San Pedro</cite></blockquote><blockquote>“Pude repetir cada paso y descargar el molde. Ideal para aprender desde casa.”<cite>Mariana · Rosario</cite></blockquote><blockquote>“El curso me ayudó a mejorar las terminaciones de los productos que vendo.”<cite>Carla · Buenos Aires</cite></blockquote></div></section>
+
+    <section class="section faq" id="faq"><div><p class="eyebrow">PREGUNTAS FRECUENTES</p><h2>Todo lo que necesitás saber</h2></div><div id="faqList"></div></section>
+
+    <section class="cta"><div><p class="eyebrow">TU PRÓXIMO PROYECTO EMPIEZA HOY</p><h2>Convertí tus ideas en piezas únicas</h2></div><a class="btn btn-light" href="#cursos">Ver todos los cursos</a></section>
+  </main>
+
+  <footer><div><a class="brand footer-brand" href="#inicio"><span class="brand-mark">A</span><span>Atelier Costura</span></a><p>Cursos online para aprender, crear y emprender.</p></div><div><b>Explorar</b><a href="#cursos">Cursos</a><a href="#faq">Preguntas frecuentes</a></div><div><b>Contacto</b><a id="waFooter" href="#">WhatsApp</a><a href="mailto:hola@ateliercostura.com">hola@ateliercostura.com</a></div><small>© <span id="year"></span> Atelier Costura. Todos los derechos reservados.</small></footer>
+
+  <dialog id="courseModal"><button class="modal-close" type="button" aria-label="Cerrar">×</button><div id="modalContent"></div></dialog>
+  <dialog id="demoModal"><button class="modal-close" type="button" aria-label="Cerrar">×</button><div class="demo-placeholder"><span>▶</span><h3>Tu video de muestra se verá aquí</h3><p>Podés reemplazar esta pantalla por un video de YouTube, Vimeo o Bunny Stream.</p></div></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
