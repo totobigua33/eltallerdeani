@@ -1,4 +1,4 @@
-const CONFIG={whatsapp:'5493329000000',currency:'ARS'};
+const CONFIG={whatsapp:'5493329634879',currency:'ARS'};
 const courses=[
 {id:1,title:'Bolso tote forrado',category:'principiante',level:'Principiante',lessons:12,price:18900,image:'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=85',desc:'Aprendé a confeccionar un bolso resistente, totalmente forrado y con terminaciones prolijas. Incluye molde imprimible.'},
 {id:2,title:'Neceser con cierre perfecto',category:'intermedio',level:'Intermedio',lessons:9,price:15900,image:'https://images.unsplash.com/photo-1559563458-527698bf5295?auto=format&fit=crop&w=900&q=85',desc:'Dominá la colocación de cierres, el armado interior y los detalles que hacen que una pieza luzca profesional.'},
